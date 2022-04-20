@@ -137,6 +137,25 @@ img {
 			width: 90%;
 		}
 	}
+
+/*LOOK*/
+
+.lookGallery{
+
+	margin: 10px 50px;
+}
+
+.lookGallery img{
+
+	transition: 1s;
+	padding: 15px;
+	width: 400px;
+}
+
+.lookGallery img:hover {
+
+	transform: scale(1.1);
+}
 	
 /*CONTACT*/
 
