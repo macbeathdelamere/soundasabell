@@ -10,6 +10,27 @@ h1{
 	text-align: center;
 }
 
+/*LANDING*/
+
+#landingImg{
+
+	width: 400px;
+	height: 200px;
+	margin: auto;
+}
+
+.newsletter{
+
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+	background: #FFE7C7;
+	display: flex;
+	border: solid 1px;
+	color: brown;
+	border-radius: 5px;
+}
+
 /*LISTEN*/
 
 img {
