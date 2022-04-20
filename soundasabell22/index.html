@@ -39,11 +39,25 @@
 
 		<!--FEATURE-->
 		<div>
-		<h2>World Map of Musical Instruments...</h2>
-		<br></br>
-		<img src="images/music.jpg" id="center" value="PLAY" onclick="play()">
-		<audio id="audio" src="sounds/Tibetan-Hit.mp3"></audio>
+			<h2>World Map of Musical Instruments...</h2>
+			<br></br>
+			<img src="images/music.jpg" id="center" value="PLAY" onclick="play()">
+			<audio id="audio" src="sounds/Tibetan-Hit.mp3"></audio>
 		</div>
+		
+		<!--NEWSLETTER-->
+		<div class="newsletter">
+			<h1>Sign Up To Our Newsletter</h1>
+		    		<form id="formNewsletter" onsubmit="formSubmission(); return false">
+
+		       			 Name:<input type="text" id="name"/><br/>
+	
+		        		Email:<input type="email" id="email"/><br/><br/>
+
+		        		<button onclick="formSubmission()">Submit</button>
+		    			<p id="confirm"</p>
+    				</form>
+    		</div>
 
 
     <footer>Thanks to Sounds, Zapsplat and FreeImages</footer>
