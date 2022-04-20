@@ -6,11 +6,28 @@ body{
 
 h1{
 	font: Work Sans;
-	color: brown;
+	color: teal;
 	text-align: center;
 }
 
 /*LANDING*/
+
+.homeGallery{
+
+	margin: 10px 50px;
+}
+
+.homeGallery img{
+
+	transition: 1s;
+	padding: 15px;
+	width: 400px;
+}
+
+.homeGallery img:hover {
+
+	transform: scale(1.1);
+}
 
 .landingHeader{
 
