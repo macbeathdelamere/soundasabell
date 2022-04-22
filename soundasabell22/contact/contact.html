@@ -41,65 +41,62 @@
 
 		<div class="theForm">
 							<form>
-
-									<table>
-										<tr>
-
-											<td><label for="name">Name</label></td>
-											<td> <input type="text" name="Username" size = "30" maxlength="30" ></td>
-										</tr>
-
-										<tr>
-											<td><label for="address">Address</label></td>
-											<td><input type="text" name="address" size = "60" maxlength="50"></td>
-										</tr>
-
-										<tr>
-											<td><label for="email">Email</label></td>
-											<td><input type="text" name="userEmail" size = "20" maxlength="30"></td>
-										</tr>
-
-										<tr>
-											<td><label for="instrument">Instrument</label></td>
-											<td><select>
-												<option>	 </option>
-												<option> Mbira  </option>
-												<option> Xun </option>
-												<option> Koto </option>
-												<option> Hardanger </option>
-												<option> Duduk </option>
-												<option> Bandura </option>
-												<option> Bouzouki </option>
-												<option> Zurna </option>
-												<option> Bullroarer </option>
-												<option> Sarod </option>
-												<option> Xaphoon </option>
-												<option> Cuícas </option>
-
-											</select></td>
-										</tr>
-										<tr>
-                                            <td><label for="expLevel">Experience Level:</label></td>
-											<td><select>
-												<option>  </option>
-												<option> Beginner </option>
-												<option> Intermediary </option>
-												<option> Advanced </option>
-											</select></td>
-										<tr>
-
-											<td><label for="message"></label></td>
-											<td> <textarea name="message" value="Enter your message here" style="font-size: 14pt; height: 250px; width:500px; "> </textarea></td>
-										</tr>
-									<table>
-								</form>
-
-
-			<button id="submitButton" onclick="submit()">Submit Query</button>
-
+						<table>
+							<tr>
+							
+								<td> Name </td>
+								<td> <input type="text" id="username" name="Username" size = "30" maxlength="30"></td>
+							</tr>
+							
+							<tr>
+								<td>Address</td>
+								<td><input type="text" id="address" name="address" size = "60" maxlength="50" ></td>
+							</tr>
+							
+							<tr>
+								<td> Email </td>
+								<td><input type="text" id="email" name="userEmail" size = "20" maxlength="30"></td>
+							</tr>
+							
+							<tr>
+								<td>Instrument</td>			
+								<td><select id="instrumentSelection">
+									<option>--Select--</option>
+									<option> Mbira  </option>
+									<option> Xun </option>
+									<option> Koto </option>
+									<option> Hardanger </option>
+									<option> Duduk </option>
+									<option> Bandura </option>
+									<option> Bouzouki </option>
+									<option> Zurna </option>
+									<option> Bullroarer </option>
+									<option> Uileann Pipes </option>
+									<option> Sarod </option>
+									<option> Xaphoo </option>
+									
+								</select></td>
+							</tr>
+							<tr>
+								<td>Experience Level:</td>
+								<td><select id="levelSelection">
+									<option>--Select--</option>
+									<option> Begginer </option>
+									<option> Intermediary </option>
+									<option> Advanced </option>
+								</select></td>
+							</tr>	
+							<tr>
+							
+								<td> Message</td>
+								<td> <textarea id="message" name="message" value="Enter your message here" style="font-size: 14pt; height: 250px; width:500px; "> </textarea></td>
+							</tr>		
+						</table>
+						<button onclick="contactSubmit()">Send</button>
+    				</form>
 	</div>
 
-	<script src="../script/contact.js"></script>
+	<script src="../script/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
  	</body>
