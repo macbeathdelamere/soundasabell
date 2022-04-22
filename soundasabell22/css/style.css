@@ -256,6 +256,12 @@ section p{
 	box-shadow: 5px 5px #888888;
 	color: teal;
 	
+	/*FLEXBOX*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+	
 }
 
 /*PRIVACY*/
