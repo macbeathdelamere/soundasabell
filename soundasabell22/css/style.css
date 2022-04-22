@@ -1,48 +1,56 @@
 body{
 
-	
+	margin: 0;
 
 }
 
 h1{
-	font: Work Sans;
+
+	font-family: Work Sans;
+	font-size: 40px;
 	color: teal;
+	text-shadow: 1px 1px white;
 	text-align: center;
+}
+
+h2{
+
+	margin: auto;
+	font-family: Work Sans;
+	font-size: 30px;
+	color: #FFAE42;
+
 }
 
 /*LANDING*/
 
-.homeGallery{
-
-	margin: 10px 50px;
-}
-
-.homeGallery img{
-
-	transition: 1s;
-	padding: 15px;
-	width: 400px;
-}
-
-.homeGallery img:hover {
-
-	transform: scale(1.1);
-}
-
 .landingHeader{
+	font-family: Work Sans;
+	font-size: 70px;
+	font-weight: 400;
+	color: white;
+	text-shadow: 2px 2px #FFAE42;
+	text-align: center;
+	position: relative;
+	top:30%;
+	right: 0%;
+	
+}
+
+.landing{
+
+	background-image: url('../images/carousel3.jpg');
+	background-size: cover;
+	background-position: center;	
+	height: 160vh;							
+}
+
+.landingLine{
 
 	width: 100%;
 	height: auto;
-	background: teal;
 	border: solid 2px;
-	color: #FFAE42;	
-}
-
-#landingImg{
-
-	width: 400px;
-	height: 200px;
-	margin: auto;
+	color: #FFAE42;
 }
 
 .landingContent1{
@@ -50,8 +58,6 @@ h1{
 		width: 100%;
 		height: auto;
 		background: #ffffff;
-		border-radius: 20px;
-		margin: 20px 0;
 		
 		/*FLEXBOX*/
 		display: flex;
@@ -66,94 +72,59 @@ h1{
 	width: 200px;
 	height: 200px;
 	background: #FFAE42;
-	margin: 20px;
-	padding: 15px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	margin: 60px;
+	padding: 5px;
 	box-sizing: border-box;
 	box-shadow: 5px 5px #888888;
 	border: 1px solid;
 	border-radius: 50px;
 	font: Work Sans;
 	font-size: 15px;
-	text-align: center;
 	color: teal;	
 }
+
+/*MEDIA QUERIES FOR LANDING RESPONSIVENESS*/
+	@media screen and (max-width: 1200px){
+	
+		.landingCol{
+			width: 50%;
+		}
+	}
+	
+	@media screen and (max-width: 768px){
+		
+		.landingCol{
+			width: 60%;
+		}
+	}
+	
+	@media screen and (max-width: 320px){
+			
+		.landingCol{
+			width: 70%;
+		}
+	}
 
 .newsletter{
 
 	width: 50%;
-	margin: auto;
-	padding: 10px;
+	margin: auto 0;
+	padding: 30px;
 	background: #FFE7C7;
 	border: solid 1px;
+	border-radius: 5px;
 	box-shadow: 5px 5px #888888;
 	color: teal;
-	border-radius: 5px;
-	
-	/*FLEXBOX*/
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	flex-flow: wrap;
-}
-
-/*LISTEN*/
-
-img {
-	border-radius: 50%;
-	width: 120px;
-	height: 120px;
-	justify-content: flex;
-}
-
-.container{
-
-	width: 100%;
-	height: auto;
-	background: #ffffff;
-	border-radius: 20px;
-	margin: 20px 0;
 	
 	/*FLEXBOX*/
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: center;
 	flex-flow: wrap;
-
 }
-
-.listenCol{
-
-	width: 200px;
-	height: 200px;
-	background: #FFAE42;
-	margin: 20px;
-	padding: 15px;
-	box-sizing: border-box;
-	box-shadow: 5px 5px #888888;
-	border: 1px solid;
-	border-radius: 20px;
-	font: Work Sans;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-	color: teal;
-	
-}
-
-	/*MEDIA QUERIES FOR RESPONSIVENESS*/
-	@media screen and (max-width: 1200px){
-	
-		.listenCol{
-			width: 40%;
-		}
-	}
-	
-	@media screen and (max-width: 600px){
-		
-		.listenCol{
-			width: 90%;
-		}
-	}
 
 /*LOOK*/
 
@@ -173,6 +144,84 @@ img {
 
 	transform: scale(1.1);
 }
+
+/*LISTEN*/
+
+.listenImg {
+
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	justify-content: flex;
+}
+
+.container{
+
+	width: 100%;
+	height: auto;
+	background: #ffffff;
+	border-radius: 20px;
+	margin: 20px 20px;
+	
+	/*FLEXBOX*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
+
+}
+
+.listenCol{
+
+	width: 200px;
+	height: 200px;
+	background: #FFAE42;
+	margin: 20px;
+	padding: 20px;
+	box-sizing: border-box;
+	box-shadow: 5px 5px #888888;
+	border: 1px solid;
+	border-radius: 20px;
+	font: Work Sans;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	color: teal;
+	
+}
+
+	/*MEDIA QUERIES FOR LISTEN RESPONSIVENESS*/
+	@media screen and (max-width: 1200px){
+	
+		.listenCol{
+			width: 40%;
+		}
+	}
+	
+	@media screen and (max-width: 768px){
+		
+		.listenCol{
+			width: 60%;
+		}
+	}
+
+/*LEARN*/
+
+section img{
+
+	width: 40%;
+	float: left;
+	margin: 40px;
+	
+}
+
+section p{
+
+	float: right;
+	margin: 40px;
+	font: Work Sans;
+	
+}
 	
 /*CONTACT*/
 
@@ -187,6 +236,12 @@ img {
 	border: solid 1px;
 	color: #FFE7C7;
 	border-radius: 5px;
+	
+	/*FLEXBOX*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-flow: wrap;
 }
 
 .theForm{
@@ -230,7 +285,7 @@ img {
 }
 
 nav { 
-	width: 100%; 
+	width: 100%;
 	float: right;  
 	margin: auto;
 	padding: auto; 
