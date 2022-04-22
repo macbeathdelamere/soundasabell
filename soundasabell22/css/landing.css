@@ -6,6 +6,12 @@ body{
 
 }
 
+p{
+
+	text-align: center;
+
+}
+
 .landingHeader{
 	font-family: Work Sans;
 	font-size: 70px;
