@@ -86,10 +86,23 @@ h2{
 	color: teal;	
 }
 
+.landingGallery{
+
+	margin: 10px 50px;
+	padding: 10px 10px;
+	border: solid 5px teal;
+	border-radius: 10px;
+}
+
 /*MEDIA QUERIES FOR LANDING RESPONSIVENESS*/
 	@media screen and (max-width: 1200px){
 	
 		.landingCol{
+			width: 50%;
+		}
+	}
+	
+		.landingGallery{
 			width: 50%;
 		}
 	}
@@ -101,10 +114,20 @@ h2{
 		}
 	}
 	
+		.landingGallery{
+			width: 60%;
+		}
+	}
+	
 	@media screen and (max-width: 320px){
 			
 		.landingCol{
 			width: 70%;
+		}
+	}
+	
+		.landingGallery{
+			width: 50%;
 		}
 	}
 
