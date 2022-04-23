@@ -233,7 +233,7 @@ h2{
 .flip-box{
 	width: 400px;
 	height: 400px;
-	background: #FFAE42;
+	background: teal;
 	margin: 20px;
 	padding: 15px;
 	box-sizing: border-box;
@@ -244,7 +244,7 @@ h2{
 	font-size: 15px;
 	font-weight: bold;
 	text-align: center;
-	color: teal;
+	color: #FFAE42;
 }
 .flip-box-inner{
 	width: 100%;
