@@ -131,6 +131,9 @@ h2{
 .lookGallery{
 
 	margin: 10px 50px;
+	padding: 10px 10px;
+	border: solid 5px teal;
+	border-radius: 10px;
 }
 
 .lookGallery img{
